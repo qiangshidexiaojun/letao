@@ -1,0 +1,81 @@
+body {
+  background: #fff;
+}
+button {
+  border: none;
+  display: block;
+  outline: none;
+  font-size: 13px;
+}
+/* 乐淘头部 */
+.lt_title a {
+  left: 0;
+  right: auto;
+}
+/* 搜索框 */
+.lt_search {
+  position: relative;
+  height: 30px;
+  line-height: 30px;
+  padding: 0 10px;
+  margin: 10px 0;
+}
+.lt_search input {
+  float: left;
+  width: 80%;
+  margin: 0;
+  padding: 0;
+  height: 30px;
+  font-size: 12px;
+  text-indent: 10px;
+  border: 1px solid #fe2c46;
+  border-radius: 4px 0 0 4px;
+  display: block;
+}
+.lt_search .search {
+  text-align: center;
+  float: right;
+  width: 20%;
+  background: #fe2c46;
+  color: #fff;
+  border-radius: 0 4px 4px 0;
+}
+/*  */
+.lt_history {
+  font-size: 12px;
+  padding: 0 10px;
+}
+.lt_history .title {
+  display: block;
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
+}
+.lt_history .history {
+  position: relative;
+}
+.lt_history .history ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  position: absolute;
+  top: 30px;
+  width: 100%;
+}
+.lt_history .history ul li {
+  border: 1px solid #ccc;
+  padding: 5px;
+  width: 100%;
+  border-bottom: none;
+  position: relative;
+}
+.lt_history .history ul li span {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  padding: 10px;
+}
+.lt_history .history ul li:last-child {
+  border-bottom: 1px solid #ccc;
+}
+/*# sourceMappingURL=./search.css.map */

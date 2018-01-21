@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./assets/fontAwesome/css/font-awesome.css">
     <link rel="stylesheet" href="./assets/mui/css/mui.css">
     <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/search.css">
 </head>
 
 <body>
@@ -18,17 +19,53 @@
 
         <!-- 乐淘头部 -->
         <header class="lt_title">
-            <h3>乐淘云购</h3>
-            <a href="./search.html">
-                <span class="fa fa-search"></span>
+            <h3>搜索中心</h3>
+            <a href="javascript:history.back()">
+                <span class="fa fa-arrow-left"></span>
             </a>
         </header>
 
-      
+        <!-- 搜索框 -->
+        <form action="search.html">
+            <div class="lt_search">
+                <input type="text" placeholder="搜索你喜欢的商品">
+                <button type="button" class="search">搜索</a>
+            </div>
+        </form>
+
+        <div class="lt_history">
+            <!-- 无历史 -->
+            <span class="title">没有历史搜索记录。</span>
+
+            <!-- 历史记录 -->
+            <div class="history mui-clearfix">
+                <span class="searchHistory mui-pull-left">搜索历史</span>
+                <div class="clearAll mui-pull-right">
+                    <span class="fa fa-trash"></span>
+                    <span>清空记录</span>
+                </div>
+                <ul>
+                    <li>
+                        <a href="javascript:;">1</a>
+                        <span class="fa fa-close"></span>
+                    </li> 
+                    <li>
+                        <a href="javascript:;">1</a>
+                        <span class="fa fa-close"></span>
+                    </li>
+                    <li>
+                        <a href="javascript:;">1</a>
+                        <span class="fa fa-close"></span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
 
         <!-- 乐淘底部 -->
         <footer class="lt_footer">
-            <a href="./index.html" class="current">
+            <a href="./index.html">
                 <span class="fa fa-home"></span>
                 <p>首页</p>
             </a>
@@ -51,6 +88,6 @@
 </body>
 <script src="./assets/zepto/zepto.min.js"></script>
 <script src="./assets/mui/js/mui.js"></script>
-<script src="./js/index.js"></script>
+<script src="./js/search.js"></script>
 
 </html>
