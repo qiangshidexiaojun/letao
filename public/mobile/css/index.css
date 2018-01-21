@@ -1,0 +1,166 @@
+img {
+  display: block;
+  width: 100%;
+}
+.clearUl {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  padding-top: 45px;
+}
+/* 乐淘视窗 */
+.lt_view {
+  height: 100%;
+}
+/* 乐淘头部 */
+.lt_title {
+  position: fixed;
+  width: 100%;
+  height: 45px;
+  background: #fe2c46;
+  top: 0;
+  left: 0;
+  text-align: center;
+  color: #fff;
+  line-height: 45px;
+  z-index: 999;
+}
+.lt_title h3 {
+  font-size: 18px;
+  font-weight: normal;
+  display: inline-block;
+}
+.lt_title a {
+  color: inherit;
+  position: absolute;
+  right: 0;
+  font-size: 18px;
+  padding: 0 20px;
+}
+/* 乐淘主体内容 */
+.lt_container {
+  background: #fff;
+  position: relative;
+  height: 100%;
+  /* 轮播图 */
+  /* 主体内容 */
+}
+.lt_container .lt_content {
+  padding: 10px 10px 50px;
+  /* 分类 */
+  /*  品牌专区*/
+  /* 运动生活 */
+  /*  商品列表*/
+  /* 广告 */
+}
+.lt_container .lt_content .lt_category a {
+  float: left;
+  width: 33.33%;
+}
+.lt_container .lt_content .lt_brand {
+  padding-top: 10px;
+}
+.lt_container .lt_content .lt_brand a:nth-child(1),
+.lt_container .lt_content .lt_brand a:nth-child(3) {
+  float: left;
+  width: 67%;
+}
+.lt_container .lt_content .lt_brand a:nth-child(1) > img,
+.lt_container .lt_content .lt_brand a:nth-child(3) > img {
+  float: left;
+  width: 50%;
+}
+.lt_container .lt_content .lt_brand a:nth-child(2) {
+  float: right;
+  width: 33%;
+}
+.lt_container .lt_content .lt_brand a:nth-child(4) {
+  float: left;
+}
+.lt_container .lt_content .lt_live ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.lt_container .lt_content .lt_live ul li {
+  width: 25%;
+  float: left;
+}
+.lt_container .lt_content .lt_goods_list ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.lt_container .lt_content .lt_goods_list ul li {
+  float: left;
+  width: 50%;
+  padding: 0 5px;
+  margin-bottom: 10px;
+}
+.lt_container .lt_content .lt_goods_list ul li .goods {
+  text-align: center;
+  border: 1px solid #eaeaea;
+  padding-bottom: 15px;
+}
+.lt_container .lt_content .lt_goods_list ul li .goods a p {
+  padding: 0 10px;
+}
+.lt_container .lt_content .lt_goods_list ul li .goods a .goods_price {
+  margin-bottom: 15px;
+}
+.lt_container .lt_content .lt_goods_list ul li .goods a .goods_price span {
+  font-size: 12px;
+}
+.lt_container .lt_content .lt_goods_list ul li .goods a .goods_price span:nth-child(1) {
+  color: #fe2c46;
+}
+.lt_container .lt_content .lt_goods_list ul li .goods a .goods_price span:nth-child(2) {
+  margin-left: 5px;
+  color: #ccc;
+}
+.lt_container .lt_content .lt_goods_list ul li .goods .btn-cell {
+  padding: 5px 10px;
+  border-radius: 4px;
+  background: #fe2c46;
+  color: #fff;
+}
+.lt_container .lt_content .lt_ad {
+  padding-bottom: 10px;
+}
+/* 乐淘底部 */
+.lt_footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  background: #fe2c46;
+  color: #fff;
+  z-index: 999;
+}
+.lt_footer a {
+  padding: 5px 0;
+  width: 25%;
+  float: left;
+  text-align: center;
+  color: inherit;
+}
+.lt_footer a > span {
+  font-size: 18px;
+}
+.lt_footer a > p {
+  color: #fff;
+}
+.lt_footer a.current {
+  color: #2892f1;
+}
+.lt_footer a.current p {
+  color: #2892f1;
+}
+/*# sourceMappingURL=./index.css.map */
