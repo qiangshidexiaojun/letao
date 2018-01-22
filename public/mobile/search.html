@@ -28,10 +28,11 @@
         <!-- 搜索框 -->
         <form action="search.html">
             <div class="lt_search">
-                <input type="text" placeholder="搜索你喜欢的商品">
-                <button type="button" class="search">搜索</a>
-            </div>
+                <input type="text" placeholder="搜索你喜欢的商品" class="search_content">
+                <button type="button" class="search">搜索</button>
+            </div> 
         </form>
+        
 
         <div class="lt_history">
             <!-- 无历史 -->
@@ -44,7 +45,7 @@
                     <span class="fa fa-trash"></span>
                     <span>清空记录</span>
                 </div>
-                <ul>
+                <ul class="lt_list">
                     <li>
                         <a href="javascript:;">1</a>
                         <span class="fa fa-close"></span>
@@ -60,8 +61,6 @@
                 </ul>
             </div>
         </div>
-
-
 
         <!-- 乐淘底部 -->
         <footer class="lt_footer">
@@ -85,9 +84,15 @@
 
     </div>
 
+
 </body>
-<script src="./assets/zepto/zepto.min.js"></script>
+<script src="./assets/zepto/zepto.js"></script>
+<script src="./assets/zepto/event.js"></script>
+<!-- <script src="./assets/zepto/touch.js"></script> -->
+
+<!-- mui库里面自带了tap事件 -->
 <script src="./assets/mui/js/mui.js"></script>
 <script src="./js/search.js"></script>
+
 
 </html>

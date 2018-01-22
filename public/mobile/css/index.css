@@ -2,11 +2,6 @@ img {
   display: block;
   width: 100%;
 }
-.clearUl {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
 /* 乐淘头部 */
 .lt_title {
   position: fixed;
