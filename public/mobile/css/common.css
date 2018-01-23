@@ -1,3 +1,10 @@
+html,
+body {
+  height: 100%;
+}
+body {
+  padding-top: 45px;
+}
 img {
   display: block;
   width: 100%;

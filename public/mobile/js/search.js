@@ -48,6 +48,7 @@ $(function(){
     $(".clearAll").on("tap",function(){
         var ls = localStorage;
         ls.removeItem("ltHistory");
+        $(".lt_list").html("");
     })
 
     /* 初始化样式 */

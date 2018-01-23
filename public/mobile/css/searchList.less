@@ -1,62 +1,88 @@
 @import "./common.less";
+@le_color: #fe2c46;
+.clearInput() {
+    margin: 0;
+    padding: 0;
+    height: 30px;
+}
 
-/* 乐淘视窗 */
+button {
+    border: none;
+    display: block;
+    outline: none;
+    font-size: 13px;
+}
 
 .lt_view {
     height: 100%;
 }
 
 
-/* 乐淘主体内容 */
+/* 乐淘头部 */
+
+.lt_title {
+    a {
+        left: 0;
+        right: auto;
+    }
+}
+
+
+/* 乐淘内容 */
 
 .lt_container {
-    background: #fff;
     position: relative;
     height: 100%;
-    /* 轮播图 */
-    .lt_carousel {}
-    /* 主体内容 */
-    .lt_content {
-        padding: 10px 10px 50px;
-        /* 分类 */
-        .lt_category {
+    #refreshContainer {
+        background: #fff;
+    }
+    .mui-scroll {
+        padding-bottom: 50px;
+        background: #fff;
+        /* 搜索框 */
+        .lt_search {
+            position: relative;
+            height: 30px;
+            line-height: 30px;
+            padding: 0 10px;
+            margin: 10px 0;
+            input {
+                float: left;
+                width: 80%;
+                .clearInput();
+                font-size: 12px;
+                text-indent: 10px;
+                border: 1px solid @le_color;
+                border-radius: 4px 0 0 4px;
+                display: block;
+            }
+            .search {
+                text-align: center;
+                float: right;
+                width: 20%;
+                background: @le_color;
+                color: #fff;
+                border-radius: 0 4px 4px 0;
+            }
+        }
+        /* 工具条 */
+        .lt_tools {
+            background: #efeff4;
             a {
                 float: left;
-                width: 33.33%;
-            }
-        }
-        /*  品牌专区*/
-        .lt_brand {
-            padding-top: 10px;
-            a:nth-child(1),
-            a:nth-child(3) {
-                float: left;
-                width: 67%;
-                >img {
-                    float: left;
-                    width: 50%;
-                }
-            }
-            a:nth-child(2) {
-                float: right;
-                width: 33%;
-            }
-            a:nth-child(4) {
-                float: left;
-            }
-        }
-        /* 运动生活 */
-        .lt_live {
-            ul {
-                .clearUl();
-                li {
-                    width: 25%;
-                    float: left;
+                width: 25%;
+                text-align: center;
+                color: #333333;
+                font-size: 12px;
+                padding: 5px 0;
+                span {
+                    font-size: inherit;
                 }
             }
         }
         /*  商品列表*/
         .lt_goods_list {
+            padding-top: 10px;
             ul {
                 .clearUl();
                 li {
@@ -69,7 +95,6 @@
                         border: 1px solid #eaeaea;
                         padding-bottom: 15px;
                         a {
-                            img {}
                             p {
                                 padding: 0 10px;
                                 overflow: hidden;
@@ -102,10 +127,6 @@
                     }
                 }
             }
-        }
-        /* 广告 */
-        .lt_ad {
-            padding-bottom: 10px;
         }
     }
 }

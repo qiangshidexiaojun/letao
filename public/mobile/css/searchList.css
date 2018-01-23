@@ -1,0 +1,184 @@
+html,
+body {
+  height: 100%;
+}
+body {
+  padding-top: 45px;
+}
+img {
+  display: block;
+  width: 100%;
+}
+/* 乐淘头部 */
+.lt_title {
+  position: fixed;
+  width: 100%;
+  height: 45px;
+  background: #fe2c46;
+  top: 0;
+  left: 0;
+  text-align: center;
+  color: #fff;
+  line-height: 45px;
+  z-index: 999;
+}
+.lt_title h3 {
+  font-size: 18px;
+  font-weight: normal;
+  display: inline-block;
+}
+.lt_title a {
+  color: inherit;
+  position: absolute;
+  right: 0;
+  font-size: 18px;
+  padding: 0 20px;
+}
+/* 乐淘底部 */
+.lt_footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  background: #fe2c46;
+  color: #fff;
+  z-index: 999;
+}
+.lt_footer a {
+  padding: 5px 0;
+  width: 25%;
+  float: left;
+  text-align: center;
+  color: inherit;
+}
+.lt_footer a > span {
+  font-size: 18px;
+}
+.lt_footer a > p {
+  color: #fff;
+}
+.lt_footer a.current {
+  color: #2892f1;
+}
+.lt_footer a.current p {
+  color: #2892f1;
+}
+button {
+  border: none;
+  display: block;
+  outline: none;
+  font-size: 13px;
+}
+.lt_view {
+  height: 100%;
+}
+/* 乐淘头部 */
+.lt_title a {
+  left: 0;
+  right: auto;
+}
+/* 乐淘内容 */
+.lt_container {
+  position: relative;
+  height: 100%;
+}
+.lt_container #refreshContainer {
+  background: #fff;
+}
+.lt_container .mui-scroll {
+  padding-bottom: 50px;
+  background: #fff;
+  /* 搜索框 */
+  /* 工具条 */
+  /*  商品列表*/
+}
+.lt_container .mui-scroll .lt_search {
+  position: relative;
+  height: 30px;
+  line-height: 30px;
+  padding: 0 10px;
+  margin: 10px 0;
+}
+.lt_container .mui-scroll .lt_search input {
+  float: left;
+  width: 80%;
+  margin: 0;
+  padding: 0;
+  height: 30px;
+  font-size: 12px;
+  text-indent: 10px;
+  border: 1px solid #fe2c46;
+  border-radius: 4px 0 0 4px;
+  display: block;
+}
+.lt_container .mui-scroll .lt_search .search {
+  text-align: center;
+  float: right;
+  width: 20%;
+  background: #fe2c46;
+  color: #fff;
+  border-radius: 0 4px 4px 0;
+}
+.lt_container .mui-scroll .lt_tools {
+  background: #efeff4;
+}
+.lt_container .mui-scroll .lt_tools a {
+  float: left;
+  width: 25%;
+  text-align: center;
+  color: #333333;
+  font-size: 12px;
+  padding: 5px 0;
+}
+.lt_container .mui-scroll .lt_tools a span {
+  font-size: inherit;
+}
+.lt_container .mui-scroll .lt_goods_list {
+  padding-top: 10px;
+}
+.lt_container .mui-scroll .lt_goods_list ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.lt_container .mui-scroll .lt_goods_list ul li {
+  float: left;
+  width: 50%;
+  padding: 0 5px;
+  margin-bottom: 10px;
+}
+.lt_container .mui-scroll .lt_goods_list ul li .goods {
+  text-align: center;
+  border: 1px solid #eaeaea;
+  padding-bottom: 15px;
+}
+.lt_container .mui-scroll .lt_goods_list ul li .goods a p {
+  padding: 0 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.lt_container .mui-scroll .lt_goods_list ul li .goods a .goods_price {
+  margin-bottom: 15px;
+}
+.lt_container .mui-scroll .lt_goods_list ul li .goods a .goods_price span {
+  font-size: 12px;
+}
+.lt_container .mui-scroll .lt_goods_list ul li .goods a .goods_price span:nth-child(1) {
+  color: #fe2c46;
+}
+.lt_container .mui-scroll .lt_goods_list ul li .goods a .goods_price span:nth-child(2) {
+  margin-left: 5px;
+  color: #ccc;
+  text-decoration: line-through;
+}
+.lt_container .mui-scroll .lt_goods_list ul li .goods .btn-cell {
+  padding: 5px 10px;
+  border-radius: 4px;
+  background: #fe2c46;
+  color: #fff;
+}
+/*# sourceMappingURL=./searchList.css.map */

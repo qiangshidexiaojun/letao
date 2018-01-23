@@ -1,3 +1,69 @@
+html,
+body {
+  height: 100%;
+}
+body {
+  padding-top: 45px;
+}
+img {
+  display: block;
+  width: 100%;
+}
+/* 乐淘头部 */
+.lt_title {
+  position: fixed;
+  width: 100%;
+  height: 45px;
+  background: #fe2c46;
+  top: 0;
+  left: 0;
+  text-align: center;
+  color: #fff;
+  line-height: 45px;
+  z-index: 999;
+}
+.lt_title h3 {
+  font-size: 18px;
+  font-weight: normal;
+  display: inline-block;
+}
+.lt_title a {
+  color: inherit;
+  position: absolute;
+  right: 0;
+  font-size: 18px;
+  padding: 0 20px;
+}
+/* 乐淘底部 */
+.lt_footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  background: #fe2c46;
+  color: #fff;
+  z-index: 999;
+}
+.lt_footer a {
+  padding: 5px 0;
+  width: 25%;
+  float: left;
+  text-align: center;
+  color: inherit;
+}
+.lt_footer a > span {
+  font-size: 18px;
+}
+.lt_footer a > p {
+  color: #fff;
+}
+.lt_footer a.current {
+  color: #2892f1;
+}
+.lt_footer a.current p {
+  color: #2892f1;
+}
 body {
   background: #fff;
 }
