@@ -4,6 +4,7 @@ $(function(){
     $(".search").on("tap",function(){
         var txt = $(".search_content").val();
         if(!$.trim(txt)){
+            mui.toast("请输入关键字")
             return;
         }
         var ls = localStorage;

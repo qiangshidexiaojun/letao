@@ -1,0 +1,118 @@
+@import "./common.less";
+
+/* 乐淘头部 */
+
+.lt_title {
+    .goback {
+        left: 0;
+        right: auto;
+    }
+}
+
+
+/* 乐淘内容 */
+
+.lt_container {
+    position: relative;
+    height: 100%;
+    #refreshContainer {
+        background: #fff;
+    }
+    .mui-scroll {
+        padding-bottom: 50px;
+    } // 商品信息
+    .product_info {
+        padding: 10px 4px;
+        border-bottom: 1px solid #e6e6e6;
+    }
+    /* 商品价格 */
+    .product_price {
+        padding: 14px 4px;
+        font-size: 14px;
+        border-bottom: 1px solid #e6e6e6;
+        .price {
+            font-size: 24px;
+            font-weight: 700;
+            color: #ea543d;
+        }
+        .old_price {
+            color: #afafaf;
+            text-decoration: line-through;
+            margin-left: 10px;
+        }
+    }
+    /* 尺码 */
+    .product_size {
+        font-size: 12px;
+        padding: 14px 4px;
+        border-bottom: 1px solid #e6e6e6;
+        span {
+            display: inline-block;
+            font-size: 16px;
+            border: 1px solid #cccccc;
+            padding: 2px;
+            margin-bottom: 4px;
+        }
+    }
+    /* 数量 */
+    .product_num {
+        padding: 14px 4px;
+        border-bottom: 1px solid #e6e6e6;
+        font-size: 14px;
+        .mui-numbox{
+            padding: 0 28px;
+            width: 90px;
+            height: 30px;
+            button:nth-child(1){
+                width: 28px;    
+            }
+            button:nth-child(3){
+                width: 28px;
+            }
+        }
+    }
+}
+
+
+/* 底部工具条 */
+
+.bottom_tools {
+    position: fixed;
+    bottom: 0;
+    height: 50px;
+    background: #fe2c46;
+    width: 100%;
+    z-index: 999;
+    a {
+        display: inline-block;
+        font-size: 20px;
+        color: #fff;
+        width: 16%;
+        text-align: center;
+        line-height: 50px;
+    }
+    div {
+        width: 80%;
+        height: 100%;
+        float: right;
+        margin-right: 5px;
+        a:nth-child(1) {
+            background: #991020;
+            float: left;
+        }
+        a:nth-child(2) {
+            background: #fa672d;
+            float: right;
+        }
+        a {
+            margin-top: 8px;
+            font-size: 16px;
+            line-height: 1;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+            width: 49%;
+            border-radius: 2px;
+        }
+    }
+}

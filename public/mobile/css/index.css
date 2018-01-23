@@ -9,6 +9,10 @@ img {
   display: block;
   width: 100%;
 }
+/* 乐淘视窗 */
+.lt_view {
+  height: 100%;
+}
 /* 乐淘头部 */
 .lt_title {
   position: fixed;
@@ -63,10 +67,6 @@ img {
 }
 .lt_footer a.current p {
   color: #2892f1;
-}
-/* 乐淘视窗 */
-.lt_view {
-  height: 100%;
 }
 /* 乐淘主体内容 */
 .lt_container {

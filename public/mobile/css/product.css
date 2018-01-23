@@ -1,0 +1,178 @@
+html,
+body {
+  height: 100%;
+}
+body {
+  padding-top: 45px;
+}
+img {
+  display: block;
+  width: 100%;
+}
+/* 乐淘视窗 */
+.lt_view {
+  height: 100%;
+}
+/* 乐淘头部 */
+.lt_title {
+  position: fixed;
+  width: 100%;
+  height: 45px;
+  background: #fe2c46;
+  top: 0;
+  left: 0;
+  text-align: center;
+  color: #fff;
+  line-height: 45px;
+  z-index: 999;
+}
+.lt_title h3 {
+  font-size: 18px;
+  font-weight: normal;
+  display: inline-block;
+}
+.lt_title a {
+  color: inherit;
+  position: absolute;
+  right: 0;
+  font-size: 18px;
+  padding: 0 20px;
+}
+/* 乐淘底部 */
+.lt_footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  background: #fe2c46;
+  color: #fff;
+  z-index: 999;
+}
+.lt_footer a {
+  padding: 5px 0;
+  width: 25%;
+  float: left;
+  text-align: center;
+  color: inherit;
+}
+.lt_footer a > span {
+  font-size: 18px;
+}
+.lt_footer a > p {
+  color: #fff;
+}
+.lt_footer a.current {
+  color: #2892f1;
+}
+.lt_footer a.current p {
+  color: #2892f1;
+}
+/* 乐淘头部 */
+.lt_title .goback {
+  left: 0;
+  right: auto;
+}
+/* 乐淘内容 */
+.lt_container {
+  position: relative;
+  height: 100%;
+  /* 商品价格 */
+  /* 尺码 */
+  /* 数量 */
+}
+.lt_container #refreshContainer {
+  background: #fff;
+}
+.lt_container .mui-scroll {
+  padding-bottom: 50px;
+}
+.lt_container .product_info {
+  padding: 10px 4px;
+  border-bottom: 1px solid #e6e6e6;
+}
+.lt_container .product_price {
+  padding: 14px 4px;
+  font-size: 14px;
+  border-bottom: 1px solid #e6e6e6;
+}
+.lt_container .product_price .price {
+  font-size: 24px;
+  font-weight: 700;
+  color: #ea543d;
+}
+.lt_container .product_price .old_price {
+  color: #afafaf;
+  text-decoration: line-through;
+  margin-left: 10px;
+}
+.lt_container .product_size {
+  font-size: 12px;
+  padding: 14px 4px;
+  border-bottom: 1px solid #e6e6e6;
+}
+.lt_container .product_size span {
+  display: inline-block;
+  font-size: 16px;
+  border: 1px solid #cccccc;
+  padding: 2px;
+  margin-bottom: 4px;
+}
+.lt_container .product_num {
+  padding: 14px 4px;
+  border-bottom: 1px solid #e6e6e6;
+  font-size: 14px;
+}
+.lt_container .product_num .mui-numbox {
+  padding: 0 28px;
+  width: 90px;
+  height: 30px;
+}
+.lt_container .product_num .mui-numbox button:nth-child(1) {
+  width: 28px;
+}
+.lt_container .product_num .mui-numbox button:nth-child(3) {
+  width: 28px;
+}
+/* 底部工具条 */
+.bottom_tools {
+  position: fixed;
+  bottom: 0;
+  height: 50px;
+  background: #fe2c46;
+  width: 100%;
+  z-index: 999;
+}
+.bottom_tools a {
+  display: inline-block;
+  font-size: 20px;
+  color: #fff;
+  width: 16%;
+  text-align: center;
+  line-height: 50px;
+}
+.bottom_tools div {
+  width: 80%;
+  height: 100%;
+  float: right;
+  margin-right: 5px;
+}
+.bottom_tools div a:nth-child(1) {
+  background: #991020;
+  float: left;
+}
+.bottom_tools div a:nth-child(2) {
+  background: #fa672d;
+  float: right;
+}
+.bottom_tools div a {
+  margin-top: 8px;
+  font-size: 16px;
+  line-height: 1;
+  color: #fff;
+  padding: 10px 0;
+  text-align: center;
+  width: 49%;
+  border-radius: 2px;
+}
+/*# sourceMappingURL=./product.css.map */

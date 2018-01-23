@@ -105,6 +105,12 @@ $(function () {
             /* 手动触发下拉刷新 */
             mui("#refreshContainer").pullRefresh().pulldownLoading();
         })
+
+        /* 点击立即购买按钮 */
+        $(".lt_goods_list").on("tap",".btn-cell",function(e){
+            // console.log(e.target);    
+            location.href = e.target.href;
+        })
     }
 
     function queryProduct(callback) {
