@@ -1,0 +1,146 @@
+html,
+body {
+  height: 100%;
+}
+body {
+  padding-top: 45px;
+}
+img {
+  display: block;
+  width: 100%;
+}
+/* 乐淘视窗 */
+.lt_view {
+  height: 100%;
+}
+/* 乐淘头部 */
+.lt_title {
+  position: fixed;
+  width: 100%;
+  height: 45px;
+  background: #fe2c46;
+  top: 0;
+  left: 0;
+  text-align: center;
+  color: #fff;
+  line-height: 45px;
+  z-index: 999;
+}
+.lt_title h3 {
+  font-size: 18px;
+  font-weight: normal;
+  display: inline-block;
+}
+.lt_title a {
+  color: inherit;
+  position: absolute;
+  right: 0;
+  font-size: 18px;
+  padding: 0 20px;
+}
+/* 乐淘底部 */
+.lt_footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  background: #fe2c46;
+  color: #fff;
+  z-index: 999;
+}
+.lt_footer a {
+  padding: 5px 0;
+  width: 25%;
+  float: left;
+  text-align: center;
+  color: inherit;
+}
+.lt_footer a > span {
+  font-size: 18px;
+}
+.lt_footer a > p {
+  color: #fff;
+}
+.lt_footer a.current {
+  color: #2892f1;
+}
+.lt_footer a.current p {
+  color: #2892f1;
+}
+/* 头部 */
+.lt_title a:first-child {
+  left: 0;
+  right: auto;
+}
+.lt_title input {
+  width: 68%;
+  height: 30px;
+  margin: 0;
+  padding: 0;
+  border: none;
+  color: #333;
+  text-indent: 0;
+  text-align: center;
+}
+.lt_title input:focus {
+  text-align: left;
+  text-indent: 10px;
+}
+/* 内容 */
+.lt_container {
+  position: relative;
+  height: 100%;
+  padding-left: 90px;
+  /* 左侧菜单 */
+  /* 右侧内容 */
+}
+.lt_container .menu_left {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 80px;
+  height: 100%;
+}
+.lt_container .menu_left .mui-scroll {
+  padding-bottom: 50px;
+}
+.lt_container .menu_left ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.lt_container .menu_left ul li {
+  height: 44px;
+  line-height: 44px;
+  text-align: center;
+  margin-bottom: 2px;
+  background: #fff;
+  font-size: 14px;
+}
+.lt_container .menu_left ul li.active {
+  background: transparent;
+}
+.lt_container .right_content {
+  position: relative;
+  height: 100%;
+}
+.lt_container .right_content .mui-scroll {
+  top: 10px;
+  min-height: 101%;
+  padding-bottom: 50px;
+}
+.lt_container .right_content a {
+  float: left;
+  width: 33%;
+}
+.lt_container .right_content a img {
+  width: 100%;
+}
+.lt_container .right_content a p {
+  text-align: center;
+  background: #fff;
+  margin: 0;
+  font-size: 12px;
+}
+/*# sourceMappingURL=./category.css.map */
