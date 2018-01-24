@@ -1,4 +1,4 @@
-$(function() {
+$(function () {
   init();
   function init() {
     mui.init({
@@ -10,8 +10,8 @@ $(function() {
           contentdown: "下拉可以刷新", //可选，在下拉可刷新状态时，下拉刷新控件上显示的标题内容
           contentover: "释放立即刷新", //可选，在释放可刷新状态时，下拉刷新控件上显示的标题内容
           contentrefresh: "正在刷新...", //可选，正在刷新状态时，下拉刷新控件上显示的标题内容
-          callback: function() {
-            getQueryProduct(function(res) {
+          callback: function () {
+            getQueryProduct(function (res) {
               res.getSize = getSize(res.size);
               //   console.log(res);
               var html = template("mytp", res);
@@ -38,7 +38,7 @@ $(function() {
     });
 
     /* 点击尺寸 */
-    $(".mui-scroll").on("tap", ".sizeP", function(e) {
+    $(".mui-scroll").on("tap", ".sizeP", function (e) {
       var countP = $(".sizeP");
       for (var i = 0; i < countP.length; i++) {
         $(countP[i]).removeClass("active");
@@ -47,7 +47,7 @@ $(function() {
     });
 
     /* 点击加入购物车 */
-    $(".addCart").on("tap", function() {
+    $(".addCart").on("tap", function () {
       if (!$(".sizeP").hasClass("active")) {
         mui.toast("请选择尺码");
         return;
@@ -63,12 +63,27 @@ $(function() {
         num: $(".product_size span.active").html(),
         size: $(".mui-numbox-input").val()
       };
-      $.post("/cart/addCart", queryObj, function(res) {
-        /* 保险写法 */
-        if (res.error && res.error == 400) {
-          location.href = "./user/login.html?returnUrl=" + location.href;
-        } //   console.log(res);
-      });
+      // $.post("/cart/addCart", queryObj, function (res) {
+      //   /* 保险写法 */
+      //   if (res.error && res.error == 400) {
+      //     location.href = "./user/login.html?returnUrl=" + location.href;
+      //   }
+      // });
+      $.ltAjax({
+        url:"/cart/addCart",
+        type: "post",
+        data: queryObj,
+        success: function(res){
+          mui.confirm("添加成功，去购物车看看？","温馨提示",["是","否"],function(a){
+            // console.log(a);
+            /* a.index = 0 是*/
+            /* a.index = 1 否*/
+            if(a.index == 0){
+              location.href = "/mobile/cart.html";
+            }
+          })
+        }
+      })
     });
   }
 
@@ -89,7 +104,7 @@ $(function() {
     $.get(
       "/product/queryProductDetail",
       { id: $.getQueryProduct("productId") },
-      function(res) {
+      function (res) {
         callback && callback(res);
       }
     );
