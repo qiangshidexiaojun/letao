@@ -75,15 +75,33 @@ img {
 .lt_container {
   padding: 10px;
 }
-.lt_container .mui-button-row {
-  margin-top: 14px;
+.lt_container .verify_code {
+  width: 60%;
 }
-.lt_container .mui-button-row .mui-btn-primary {
+.lt_container .get_code {
+  width: 38%;
+  padding: 9px 0;
+}
+.lt_container .lt_register {
+  margin-top: 18px;
   width: 100%;
 }
-.lt_container .free_register {
-  color: #007aff;
+.lt_container .lt_cb {
   font-size: 12px;
-  margin-top: 14px;
+  margin-top: 30px;
+  width: 100%;
 }
-/*# sourceMappingURL=./login.css.map */
+.lt_container .lt_cb #isAgree {
+  vertical-align: middle;
+}
+.lt_container .lt_cb label {
+  font-size: inherit;
+  margin: 0;
+  padding: 0;
+  width: initial;
+  float: initial;
+}
+.lt_container .lt_cb a {
+  color: #007aff;
+}
+/*# sourceMappingURL=./register.css.map */

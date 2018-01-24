@@ -8,7 +8,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="../assets/fontAwesome/css/font-awesome.css">
     <link rel="stylesheet" href="../assets/mui/css/mui.css">
-    <link rel="stylesheet" href="../css/user/login.css">
+    <link rel="stylesheet" href="../css/user/register.css">
 </head>
 
 <body>
@@ -27,16 +27,27 @@
         <div class="lt_container">
             <form class="lt_form_login" method="#">
                 <div class="mui-input-row">
-                    <input type="text" name="username" class="mui-input-clear" placeholder="用户名/手机号">
+                    <input type="text" name="username" class="mui-input-clear username" placeholder="手机号">
                 </div>
                 <div class="mui-input-row">
-                    <input type="password" name="password" class="mui-input-password" placeholder="密码">
+                    <input type="password" name="password" class="mui-input-password password" placeholder="密码">
+                </div>
+                <div class="mui-input-row">
+                    <input type="password" class="mui-input-password confirm" placeholder="确认密码">
+                </div>
+                <div class="lt_code">
+                    <input type="text" name="verify_code" class="mui-input-clear verify_code" placeholder="认证码">
+                    <button type="button" class="mui-btn mui-btn-primary get_code">获取认证码</button>
                 </div>
                 <div class="mui-button-row">
-                    <button type="button" class="mui-btn mui-btn-primary lt_login">登录</button>
+                    <button type="button" class="mui-btn mui-btn-primary lt_register">注册</button>
+                </div>
+                <div class="lt_cb">
+                    <input name="checkbox" id="isAgree" type="checkbox">
+                    <label for="isAgree">我同意《会员服务协议》</label>
+                    <a href="javascript:;" class="mui-pull-right">立即登录</a>
                 </div>
             </form>
-            <a href="./register.html" class="mui-pull-right free_register">免费注册</a>
         </div>
 
         <!-- 乐淘底部 -->
@@ -69,7 +80,7 @@
 <!-- mui库里面自带了tap事件 -->
 <script src="../assets/mui/js/mui.js"></script>
 <script src="../js/common.js"></script>
-<script src="../js/user/login.js"></script>
+<script src="../js/user/register.js"></script>
 
 
 </html>
