@@ -31,6 +31,12 @@ $(function () {
             $(this).addClass("active");
             rendering(id);
         });
+
+        /* 点击搜索按钮 */
+        $(".lt_title a:nth-of-type(2)").on("tap",function(e){
+            var txt = $(".lt_title input").val();
+            location.href = "/mobile/searchList.html?key=" + txt;
+        })
     }
 
     /* 获取一级菜单的数据 */

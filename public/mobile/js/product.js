@@ -12,7 +12,8 @@ $(function () {
           contentrefresh: "正在刷新...", //可选，正在刷新状态时，下拉刷新控件上显示的标题内容
           callback: function () {
             getQueryProduct(function (res) {
-              res.getSize = getSize(res.size);
+              /* 获取尺码范围转换为数组 */
+              res.getSize = $.getSize(res.size);
               //   console.log(res);
               var html = template("mytp", res);
               $(".mui-scroll").html(html);
@@ -70,33 +71,21 @@ $(function () {
       //   }
       // });
       $.ltAjax({
-        url:"/cart/addCart",
+        url: "/cart/addCart",
         type: "post",
         data: queryObj,
-        success: function(res){
-          mui.confirm("添加成功，去购物车看看？","温馨提示",["是","否"],function(a){
+        success: function (res) {
+          mui.confirm("添加成功，去购物车看看？", "温馨提示", ["是", "否"], function (a) {
             // console.log(a);
             /* a.index = 0 是*/
             /* a.index = 1 否*/
-            if(a.index == 0){
+            if (a.index == 0) {
               location.href = "/mobile/cart.html";
             }
           })
         }
       })
     });
-  }
-
-  /* 获取尺码范围转换为数组 */
-  function getSize(size) {
-    var start = size.split("-")[0];
-    var end = size.split("-")[1];
-    var arr = [];
-    for (var i = start; i <= end; i++) {
-      arr.push(i);
-    }
-    return arr;
-    // console.log(arr);
   }
 
   /* 发送请求获取数据 */
