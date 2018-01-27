@@ -1,0 +1,33 @@
+@import "../common.less";
+
+/* 头部 */
+
+.lt_title {
+    a {
+        right: auto;
+        left: 0;
+    }
+}
+
+
+/* 内容 */
+
+.lt_container {
+    position: relative;
+    height: 100%;
+    .lt_login_out {
+        margin-top: 20px;
+        padding: 0 20px;
+        background: transparent;
+        font-size: 16px;
+        font-weight: normal;
+        &:before,&:after{
+            height: 0;
+        }
+        li {
+            padding: 8px 15px;
+            background: #fff;
+            border: 1px solid #c8c7cc;
+        }
+    }
+}

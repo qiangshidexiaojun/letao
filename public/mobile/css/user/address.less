@@ -1,0 +1,53 @@
+@import "../common.less";
+
+/* 头部 */
+
+.lt_title {
+    a {
+        right: auto;
+        left: 0;
+    }
+}
+
+
+/* 内容 */
+
+.lt_container {
+    position: relative;
+    height: 100%;
+    .mui-scroll {
+        padding-bottom: 50px;
+        /* 添加地址 */
+        .lt_add_address {
+            a {
+                display: block;
+                width: 100%;
+                color: #333;
+                text-align: center;
+                font-size: 14px;
+                border: 1px solid #c9c9cc;
+                padding: 10px;
+                background: #fff;
+            }
+        }
+        /* 地址信息 */
+        .address_info {
+            /* 标题信息 */
+            .info_title {
+                font-size: 14px;
+            }
+            /* 内容信息 */
+            .info_content {
+                font-size: 14px;
+                color: #cfcfcf;
+            }
+            /* 右边箭头 */
+            .info_right {
+                position: absolute;
+                right: -10px;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+        }
+    }
+}

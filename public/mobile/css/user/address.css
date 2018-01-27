@@ -1,0 +1,114 @@
+html,
+body {
+  height: 100%;
+}
+body {
+  padding-top: 45px;
+}
+img {
+  display: block;
+  width: 100%;
+}
+/* 乐淘视窗 */
+.lt_view {
+  height: 100%;
+}
+/* 乐淘头部 */
+.lt_title {
+  position: fixed;
+  width: 100%;
+  height: 45px;
+  background: #fe2c46;
+  top: 0;
+  left: 0;
+  text-align: center;
+  color: #fff;
+  line-height: 45px;
+  z-index: 999;
+}
+.lt_title h3 {
+  font-size: 18px;
+  font-weight: normal;
+  display: inline-block;
+}
+.lt_title a {
+  color: inherit;
+  position: absolute;
+  right: 0;
+  font-size: 18px;
+  padding: 0 20px;
+}
+/* 乐淘底部 */
+.lt_footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  background: #fe2c46;
+  color: #fff;
+  z-index: 999;
+}
+.lt_footer a {
+  padding: 5px 0;
+  width: 25%;
+  float: left;
+  text-align: center;
+  color: inherit;
+}
+.lt_footer a > span {
+  font-size: 18px;
+}
+.lt_footer a > p {
+  color: #fff;
+}
+.lt_footer a.current {
+  color: #2892f1;
+}
+.lt_footer a.current p {
+  color: #2892f1;
+}
+/* 头部 */
+.lt_title a {
+  right: auto;
+  left: 0;
+}
+/* 内容 */
+.lt_container {
+  position: relative;
+  height: 100%;
+}
+.lt_container .mui-scroll {
+  padding-bottom: 50px;
+  /* 添加地址 */
+  /* 地址信息 */
+}
+.lt_container .mui-scroll .lt_add_address a {
+  display: block;
+  width: 100%;
+  color: #333;
+  text-align: center;
+  font-size: 14px;
+  border: 1px solid #c9c9cc;
+  padding: 10px;
+  background: #fff;
+}
+.lt_container .mui-scroll .address_info {
+  /* 标题信息 */
+  /* 内容信息 */
+  /* 右边箭头 */
+}
+.lt_container .mui-scroll .address_info .info_title {
+  font-size: 14px;
+}
+.lt_container .mui-scroll .address_info .info_content {
+  font-size: 14px;
+  color: #cfcfcf;
+}
+.lt_container .mui-scroll .address_info .info_right {
+  position: absolute;
+  right: -10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+/*# sourceMappingURL=./address.css.map */

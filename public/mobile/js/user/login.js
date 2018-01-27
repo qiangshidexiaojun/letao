@@ -23,9 +23,9 @@ $(function() {
             mui.toast(res.message);
             return;
         }
-        var returnUrl = $.getQueryProduct("returnUrl");
+        // var returnUrl = $.getQueryProduct("returnUrl");
         // console.log(returnUrl);
-        location.href = returnUrl;
+      location.href = $.getQueryProduct("returnUrl");
     });
   });
 });

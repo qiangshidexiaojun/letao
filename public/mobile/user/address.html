@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1,minimum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../assets/fontAwesome/css/font-awesome.css">
+    <link rel="stylesheet" href="../assets/mui/css/mui.css">
+    <link rel="stylesheet" href="../css/user/address.css">
+</head>
+
+<body>
+
+    <!-- 乐淘视窗 -->
+    <div class="lt_view">
+
+        <!-- 乐淘头部 -->
+        <header class="lt_title">
+            <h3>收货地址管理</h3>
+            <a href="javascript:history.back()">
+                <span class="fa fa-arrow-left"></span>
+            </a>
+        </header>
+
+        <!-- 内容 -->
+        <div class="lt_container">
+            <div class="mui-scroll-wrapper">
+                <div class="mui-scroll">
+                    <!-- 添加地址 -->
+                    <div class="lt_add_address">
+                        <a href="/mobile/user/addressManage.html">添加收货地址</a>
+                    </div>
+                    <ul id="OA_task_2" class="mui-table-view"></ul>
+                </div>
+            </div>
+        </div>
+      
+        <!-- 乐淘底部 -->
+        <footer class="lt_footer">
+            <a href="/mobile/index.html">
+                <span class="fa fa-home"></span>
+                <p>首页</p>
+            </a>
+            <a href="/mobile/category.html">
+                <span class="fa fa-bars"></span>
+                <p>分类</p>
+            </a>
+            <a href="/mobile/cart.html">
+                <span class="fa fa-shopping-cart"></span>
+                <p>购物车</p>
+            </a>
+            <a href="/mobile/user/index.html">
+                <span class="fa fa-user"></span>
+                <p>会员中心</p>
+            </a>
+        </footer>
+
+    </div>
+
+
+</body>
+<script src="../assets/zepto/zepto.js"></script>
+<script src="../assets/zepto/event.js"></script>
+<script src="../assets/zepto/ajax.js"></script>
+<!-- <script src="./assets/zepto/touch.js"></script> -->
+
+<!-- mui库里面自带了tap事件 -->
+<script src="../assets/mui/js/mui.js"></script>
+<script src="../assets/artTemplate/template.js"></script>
+<script type="text/html" id="mytp">
+    {{each data as value}}
+    <li data-id="{{value.id}}" class="mui-table-view-cell mui-transitioning">
+        <div class="mui-slider-left mui-disabled">
+            <a class="mui-btn mui-btn-danger" style="z-index: 1; transform: translate(0px, 0px);">删除</a>
+        </div>
+        <div class="mui-slider-right mui-disabled">
+            <a class="mui-btn mui-btn-danger" style="transform: translate(0px, 0px);">删除</a>
+        </div>
+        <div class="mui-slider-handle" style="transform: translate(0px, 0px);">
+            <!-- 地址信息 -->
+            <div class="address_info">
+                <!-- 标题信息 -->
+                <div class="info_title">
+                    邮编：{{value.postCode}} 收货人：{{value.recipients}}
+                </div>
+                <!-- 内容信息 -->
+                <div class="info_content">
+                    {{value.address+value.addressDetail}}
+                </div>
+                <!-- 右边箭头 -->
+                <div class="info_right">
+                    <span class="fa fa-angle-right"></span>
+                </div>
+            </div>
+        </div>
+    </li>
+    {{/each}}
+</script>
+<script src="../js/common.js"></script>
+<script src="../js/user/address.js"></script>
+
+
+</html>

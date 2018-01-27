@@ -61,8 +61,8 @@ $(function () {
 
       /* 传送的数据 */ var queryObj = {
         productId: $.getQueryProduct("productId"),
-        num: $(".product_size span.active").html(),
-        size: $(".mui-numbox-input").val()
+        size: $(".product_size span.active").html(),
+        num: $(".mui-numbox-input").val()
       };
       // $.post("/cart/addCart", queryObj, function (res) {
       //   /* 保险写法 */
