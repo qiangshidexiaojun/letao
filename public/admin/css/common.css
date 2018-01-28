@@ -1,0 +1,111 @@
+html,
+body {
+  height: 100%;
+}
+body {
+  padding-left: 180px;
+  position: relative;
+}
+body a,
+body a:hover {
+  text-decoration: none!important;
+}
+/* 左侧菜单栏 */
+aside {
+  width: 180px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: #222d32;
+  height: 100%;
+}
+aside .brand a {
+  display: block;
+  height: 50px;
+  width: 180px;
+  background: #367fa9;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 50px;
+  text-align: center;
+}
+aside .user {
+  padding: 30px 20px;
+}
+aside .user img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+aside .user span {
+  color: #fff;
+  font-size: 12px;
+}
+aside .menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+aside .menu ul li {
+  position: relative;
+  text-align: center;
+  font-size: 14px;
+}
+aside .menu ul li > a {
+  display: block;
+  height: 40px;
+  line-height: 40px;
+  padding-right: 30px;
+  color: #aaaaaa;
+}
+aside .menu ul li .child {
+  display: none;
+  margin-left: 15px;
+  font-size: 12px;
+}
+aside .menu ul li .child a {
+  color: #aaa;
+  display: block;
+  padding: 10px 40px 10px 0;
+}
+aside .menu ul li.now > a {
+  background: #1d1f21;
+  color: #fff;
+  border: 3px solid transparent;
+  border-left-color: #3c8dbc;
+}
+/* 右侧内容区 */
+section {
+  height: 100%;
+  /* 导航条 */
+  /* 主要内容 */
+}
+section .lt_nav {
+  background: #3c8dbc;
+  height: 50px;
+  line-height: 50px;
+}
+section .lt_nav span {
+  cursor: pointer;
+  padding: 17px;
+  font-size: 16px;
+  color: #fff;
+}
+section .container-fluid {
+  margin-top: 20px;
+}
+section .container-fluid .breadcrumb {
+  background: #f5f5f5;
+}
+section .container-fluid .breadcrumb .active a {
+  color: inherit;
+}
+/* 模态框 */
+.modal .modal-dialog {
+  width: 300px;
+}
+.modal .modal-dialog .modal-body p span {
+  margin-right: 5px;
+}
+/*# sourceMappingURL=./common.css.map */
