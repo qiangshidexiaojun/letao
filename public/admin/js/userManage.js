@@ -3,11 +3,11 @@ $(function () {
 
     var queryObj = {
         page: 1,
-        pageSize: 5 
+        pageSize: 5
     }
 
     var updateObj;
-    
+
 
     init();
     function init() {
@@ -31,23 +31,23 @@ $(function () {
         })
 
         /* 点击禁用按钮 */
-        $(".lt_user_tab").on("click",".lt_controls_disable",function(e){
-            $.clickSure(e.target, function () { 
+        $(".lt_user_tab").on("click", ".lt_controls_disable", function (e) {
+            $.clickSure(e.target, function () {
                 updateObj = {
                     id: $(e.target).parents("tr").data("id"),
                     isDelete: 0
                 }
-                updateUser(updateObj,function(res){
-                    if(res.success){
+                updateUser(updateObj, function (res) {
+                    if (res.success) {
                         queryUser();
                     }
                 })
-            })
+            }, 123)
         })
 
         /* 点击启用按钮 */
         $(".lt_user_tab").on("click", ".lt_controls_start", function (e) {
-            $.clickSure(e.target, function(){} ,function () {
+            $.clickSure(e.target, function () {
                 updateObj = {
                     id: $(e.target).parents("tr").data("id"),
                     isDelete: 1
@@ -57,7 +57,7 @@ $(function () {
                         queryUser();
                     }
                 })
-            })
+            }, 123)
         })
     }
 
@@ -75,8 +75,8 @@ $(function () {
     }
 
     /* 修改用户状态 */
-    function updateUser(updateObj,callback){
-        $.post("/user/updateUser",updateObj,function(res){
+    function updateUser(updateObj, callback) {
+        $.post("/user/updateUser", updateObj, function (res) {
             callback && callback(res);
         })
     }

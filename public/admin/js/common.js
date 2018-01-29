@@ -1,10 +1,9 @@
 $(function () {
-
     /* 拓展jq方法 */
     $.extend($, {
-        clickSure: function (value, callbackDisable, callbackSure) {
+        clickSure: function (value, callback) {
             /* 点击模态框的确认 */
-            $(".lt_btn_sure").on("click", function () {
+            $(".lt_btn_sure")[0].onclick = function () {
                 if (value.nodeName == "SPAN") {
                     $('.modal').modal('hide');
                     employeeLogout(function (res) {
@@ -16,15 +15,10 @@ $(function () {
                         }
                     })
                 } else if (value.nodeName == "BUTTON") {
-                    if (value.innerHTML == "禁用") {
-                        $('.modal').modal('hide');
-                        callbackDisable && callbackDisable();
-                    } else if (value.innerHTML == "启用") {
-                        $('.modal').modal('hide');
-                        callbackSure && callbackSure();
-                    }
+                    $('.modal').modal('hide');
+                    callback && callback();
                 }
-            })
+            }
         }
     })
 
@@ -56,10 +50,15 @@ $(function () {
         }
     })
 
-    /* 当模态框完全显示的时候出发 */
-    $('.modal').on('shown.bs.modal', function (e) {
+    // /* 当模态框完全显示的时候出发 */
+   /*  $('.modal').on('shown.bs.modal', function (e) {
         $.clickSure(e.relatedTarget);
+    }) */
+
+    $(".lt_nav .glyphicon-log-out").on("click",function(e){
+        $.clickSure(e.target);
     })
+
 
     /* 退出登录 */
     function employeeLogout(callback) {
