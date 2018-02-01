@@ -33,7 +33,7 @@ $(function () {
             $(".dropdown-menu").on("click", function (e) {
                 var target = e.target;
                 $(".dropdown-text").html(target.innerHTML);
-                $("#categoryId").val(target.innerHTML);
+                $("#categoryId").val(e.target.dataset.id);
                 // 手动调用验证提示 
                 $('#form').data('bootstrapValidator').updateStatus('categoryId', 'VALID');
             })
@@ -71,10 +71,10 @@ $(function () {
     /* 查询一级分类 */
     function queryTopCategoryPaging(callback) {
         $.get("/category/queryTopCategoryPaging", { page: 1, pageSize: 10000 }, function (res) {
-            // console.log(res);
+            console.log(res);
             var html = "";
             for (var i = 0; i < res.rows.length; i++) {
-                html += "<li><a href='javascript:;'>" + res.rows[i].categoryName + "</a></li>";
+                html += "<li><a href='javascript:;' data-id='"+ res.rows[i].id +"'>" + res.rows[i].categoryName + "</a></li>";
             }
             $(".dropdown-menu").html(html);
             callback && callback();
@@ -149,21 +149,19 @@ $(function () {
             brandName: $("#brandName").val(),
             categoryId: $("#categoryId").val(),
             brandLogo: $("#brandLogo").val(),
-            hot: ""
+            hot: 1
         }
-        console.log(addObj);
-
+        // console.log(addObj);
         addSecondCategory(function(res){
             console.log(res);
             if(res.success){
+                $('#myModal').modal('hide');
                 querySecondCategoryPaging();
             }
         })
 
-
         // 阻止默认提交事件
         e.preventDefault();
-
     });
 
     /* 重置表单 */
@@ -172,6 +170,8 @@ $(function () {
         $("#form")[0].reset();
         // 重置验证信息- 插件的重置 重置的是插件自己的图标显示 
         $("#form").data('bootstrapValidator').resetForm();
+        //重置下拉菜单
+        $(".dropdown-text").html("请选择");
 
         // 重置隐藏域和图片
         $("#brandLogo").val("");

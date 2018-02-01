@@ -108,27 +108,46 @@ section .container-fluid .breadcrumb .active a {
 .modal .modal-dialog .modal-body p span {
   margin-right: 5px;
 }
+/* 表格 */
 .lt_category_tab {
-  margin-top: 15px;
+  margin-top: 20px;
 }
 .lt_category_tab th {
   text-align: center;
 }
-.lt_category_tab td {
-  line-height: 100px!important;
+.lt_category_tab .lt_soldOut,
+.lt_category_tab .lt_ground {
+  margin-right: 5px;
 }
-.modal-body .chooseImg {
+/* 单选框 */
+.lt_statu label {
+  cursor: pointer;
+  color: #000;
+  font-weight: normal;
+}
+.lt_statu input {
+  cursor: pointer;
+  margin-left: 50px;
+}
+/* 文件上传 */
+.lt_upload {
+  position: relative;
+}
+.lt_upload .chooseImg {
   width: 82px;
   height: 34px;
-  margin-top: -34px;
+  position: relative;
+  top: -34px;
   opacity: 0;
 }
-.modal-body .lt_img img {
-  width: 100px;
-  height: 100px;
+.lt_upload .lt_tips {
+  position: absolute;
+  top: 7px;
+  left: 94px;
+  color: #000;
 }
-.lt_category_tab img {
-  width: 100px;
-  height: 100px;
+/* 图片 */
+.lt_img img {
+  width: 150px;
 }
-/*# sourceMappingURL=./categorySecond.css.map */
+/*# sourceMappingURL=./productManage.css.map */

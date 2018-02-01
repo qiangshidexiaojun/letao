@@ -95,6 +95,7 @@ $(function () {
     /* 重置表单 */
     $('.modal').on('hide.bs.modal', function (e) {
         $("form").data('bootstrapValidator').resetForm();
+        $("#categoryName").val("");
     })
 
     /* 添加一级分类 */

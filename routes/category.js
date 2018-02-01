@@ -98,14 +98,12 @@ router.post("/addSecondCategoryPic", function (req, res) {
             if (err) return res.send({ "error": 403, "message": "图片保存异常！" });
 
             res.send({ "picAddr": '/upload/brand/' + picName });
-
-
         });
     });
 });
 router.post("/addSecondCategory", checkRootLogin)
 router.post("/addSecondCategory", function (req, res) {
-
+  
     var brand = new Brand({
         brandName: req.body.brandName ? req.body.brandName : '',
         categoryId: req.body.categoryId ? parseInt(req.body.categoryId) : '',
@@ -113,7 +111,9 @@ router.post("/addSecondCategory", function (req, res) {
         hot: req.body.hot ? parseInt(req.body.hot) : '',
         brandLogo: req.body.brandLogo ? req.body.brandLogo : ''
     })
+   
     Brand.addSecondCategory(brand, function (err, data) {
+        // console.log(err);
         if (err) return res.send({ "error": 403, "message": "数据库异常！" });
         res.send({ "success": true });
 
